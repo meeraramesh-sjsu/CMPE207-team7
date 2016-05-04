@@ -1,5 +1,3 @@
-A client-server distributed application in Java for a guessing game
-The server chooses a word from a dictionary file, and the client (the player) tries to guess the word chosen by the server by suggesting letters (one letter at a time) or a whole word.  
-The client is given a certain number of attempts (failed attempts) when it may suggest a letter that does not occur in the word. 
-If the client suggests a letter that occurs on the word, the server places the letter in all its positions in the word; 
-otherwise the counter of allowed failed attempts is decremented. 
+A client-server distributed application in Java for 4 pics 1word game.
+The server accepts connections from different clients. When a client (player) starts a new game, the server chooses an image from a folder and it's corresponding word from a text file, and sends it to the client. The client tries to guess the word chosen by the server by suggesting letters (one or more than one letter(s) at a time).  
+The client is given 10 attempts (failed attempts) and also has an option to choose Hint (one letter).
